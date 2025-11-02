@@ -158,6 +158,7 @@ def transaction_analysis(transactions_df: pd.DataFrame):
     top_customer_count = transactions_df['customer_id'].value_counts().max()
     print(f"Customer ID: {top_customer_id}, Purchases: {top_customer_count}\n")
     
+    
 def main():
     # verify_data_loading()
     # data_basic_info(customers_df, 'CUSTOMERS')
@@ -169,9 +170,10 @@ def main():
     # data_quality(customers_df, 'CUSTOMERS')
     # data_quality(customers_df, 'PRODUCTS')
     # data_quality(customers_df, 'TRANSACTION')
-    customer_analysis(customers_df)
-    product_analysis(products_df)
-    transaction_analysis(transactions_df)
+    # customer_analysis(customers_df)
+    # product_analysis(products_df)
+    # transaction_analysis(transactions_df)
+    pass
 
 
 if __name__ == "__main__":
